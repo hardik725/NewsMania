@@ -9,7 +9,7 @@ const NewsSection = ({ category }) => {
     const fetchNews = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`https://newsapi.org/v2/everything?q=${category}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
+        const response = await fetch(`https://newsapi.org/v2/everything?q=${category}&apiKey=ca3767332dc44a6cb7c802f3a86711df`);
         if (!response.ok) {
           throw new Error("Error fetching news data");
         }
